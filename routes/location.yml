@@ -1,0 +1,5 @@
+location:
+  - :path: /location/90401
+    :description: This route is used to get location details for a particular zip code.
+    :method: :get
+    :test_file: location/location.json
