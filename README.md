@@ -7,8 +7,8 @@ _____  ______ |__|  | __ ____   ______  _  __
 
 #### apiKnow provides you with the ability to quickly test an API and generate API documentation.
 
-## GUIDELINES for testing
-----------------------
+### GUIDELINES for testing
+-----
 #### Unversioned APIs
 After making any modifications, always add a test and never remove test coverage.
 This approach will ensure backwards compatibility.
@@ -17,29 +17,32 @@ This approach will ensure backwards compatibility.
 After making any modifications, always add a test and never remove test coverage.
 This approach will ensure backwards compatibility.
 
-## Running the tests
+### Running the tests
+```bash
 >> ruby run_tests.rb
-
-## Running the CbApiIntegrationTest interactive console
+```
+### Running the CbApiIntegrationTest interactive console
+```bash
 >> ./apitestconsole
+```
 
-## Generating Documenation
+### Generating Documenation
+```bash
 >> rake generate_docs
+```
 
-## Adding tests / end-points
+### Adding tests / end-points
 Add a YAML file in routes (see existing). Add a response JSON or whatever file in spec/responses.
 
-
-## Running tests from Jenkins/Hudson/CI server
-### Mac/linux/unix
+### Running tests from Jenkins/Hudson/CI server
+#### Mac/linux/unix
   The tests are easily runnable via any continuous integration server by simply running the 'ci.sh'
   file from your CI server for bash environments.
 
-### Windows
+#### Windows
   (Coming soon)
 
 Run honorable tests for great justice.
-
 
 ## License
 
