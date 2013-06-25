@@ -1,4 +1,4 @@
-# apiknow
+# ApiKnow
 #### apiKnow provides you with the ability to quickly test an API and generate API documentation.
 
 #### GUIDELINES for testing
