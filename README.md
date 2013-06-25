@@ -1,5 +1,5 @@
 # ApiKnow
-#### apiKnow provides you with the ability to quickly test an API and generate API documentation.
+#### ApiKnow provides you with the ability to quickly test an API and generate API documentation.
 
 #### GUIDELINES for testing
 
@@ -8,8 +8,7 @@ After making any modifications, always add a test and never remove test coverage
 This approach will ensure backwards compatibility.
 
 ##### Versioned APIs
-After making any modifications, always add a test and never remove test coverage.
-This approach will ensure backwards compatibility.
+WIP
 
 #### Running the tests
 ```bash
