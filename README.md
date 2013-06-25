@@ -14,7 +14,7 @@ WIP
 ```bash
 >> ruby run_tests.rb
 ```
-##### Running the CbApiIntegrationTest interactive console
+##### Running ApiKnow in interactive console
 ```bash
 >> ./apitestconsole
 ```
