@@ -1,10 +1,4 @@
-              .__ __
-_____  ______ |__|  | __ ____   ______  _  __
-\__  \ \____ \|  |  |/ //    \ /  _ \ \/ \/ /
- / __ \|  |_> >  |    <|   |  (  <_> )     /
-(____  /   __/|__|__|_ \___|  /\____/ \/\_/
-     \/|__|           \/    \/
-
+# apiknow
 #### apiKnow provides you with the ability to quickly test an API and generate API documentation.
 
 ### GUIDELINES for testing
