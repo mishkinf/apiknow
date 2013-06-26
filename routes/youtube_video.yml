@@ -1,4 +1,4 @@
-location:
+videos:
   - :path: /feeds/api/videos/3aICB2mUu2k
     :description: This route is used to get information about a youtube video details
     :method: :get

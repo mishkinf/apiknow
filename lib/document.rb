@@ -20,6 +20,7 @@ class Document
     File.open(file_path, 'w') do |f|
       f.write(generate)
     end
+    puts "#{file_path} generated."
   end
 end
 
