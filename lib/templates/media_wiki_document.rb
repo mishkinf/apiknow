@@ -48,7 +48,7 @@ class MediaWikiDocument < Document
   def example_requests(route)
     path_with_params = route.path_with_params
 
-    host = "http://mishkinfaustini.com/"
+    host = 'http://gdata.youtube.com/'
     url = host + path_with_params
 
     "[#{url} #{path_with_params}]"

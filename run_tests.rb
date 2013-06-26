@@ -4,11 +4,11 @@ $:.push '.'
 require 'rake'
 require File.dirname(__FILE__) + '/server'
 
-API_REQUEST_BASE = 'http://127.0.0.1:3333/'
+API_REQUEST_BASE = 'http://gdata.youtube.com/'
 
 # Create any test database needed
-# Initialize Test Fixtures
-# Spawn any servers are are needed to run the API
+# Initialize test database with test data
+# Spawn api server
 
 require 'open3'
 

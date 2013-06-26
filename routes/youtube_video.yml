@@ -1,0 +1,12 @@
+location:
+  - :path: /feeds/api/videos/3aICB2mUu2k
+    :description: This route is used to get information about a youtube video details
+    :method: :get
+    :required_params:
+        - :name: v
+          :example_value: 2
+          :description: Version of the API
+    :optional_params:
+        - :name: alt
+          :example_value: json
+          :description: specifies the format desitred

@@ -1,10 +1,11 @@
 class Resource
-  attr_accessor :name, :description, :routes
+  attr_accessor :name, :description, :routes, :host
 
-  def initialize(name, description, routes)
+  def initialize(name, description, routes, host)
     @name = name
     @description = description
     @routes = routes
+    @host = host
   end
 
   def human_readable

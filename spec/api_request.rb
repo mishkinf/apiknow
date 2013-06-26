@@ -1,5 +1,7 @@
 require 'curb'
-require 'yajl/json_gem'
+require 'uri'
+
+API_REQUEST_BASE = 'http://gdata.youtube.com/'
 
 def api_request(route, params)
   method = route.http_method
@@ -15,15 +17,14 @@ def api_request(route, params)
   query_params = query_params.flatten.compact
   post_param = post_params.flatten.compact
 
-  url_string = API_REQUEST_BASE + route.path + route.make_query_string(query_params)
-
+  url_string = URI.join(API_REQUEST_BASE, route.path, route.make_query_string(query_params)).to_s
   case method
     when :get
-      #puts "GET #{url_string}"
+      puts "GET #{url_string}"
       result = Curl.get url_string
     when :post
-      #puts "POST #{url_string}"
-      #puts "PARAMS: #{post_params.inspect}"
+      puts "POST #{url_string}"
+      puts "PARAMS: #{post_params.inspect}"
       post_param = post_params.first.example_value
       result = Curl.post url_string, post_param
     else
@@ -41,6 +42,6 @@ def api_request(route, params)
       }
     }
   else
-    return result.status.to_i, JSON.parse(result.body_str)
+    return result.status.to_i, result.body_str
   end
 end
