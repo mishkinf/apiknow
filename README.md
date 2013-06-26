@@ -25,7 +25,23 @@ WIP
 ```
 
 ##### Adding tests / end-points
-Add a YAML file in routes (see existing). Add a response JSON or whatever file in spec/responses.
+Add a YAML file in routes folder(see existing). Add a response JSON or whatever file in spec/responses.
+
+```yaml
+# Example YAML based DSL for specifying routes, parameters, descriptions and test files
+videos:
+  - :path: /feeds/api/videos/3aICB2mUu2k
+    :description: This route is used to get information about a youtube video details
+    :method: :get
+    :required_params:
+        - :name: v
+          :example_value: 2
+          :description: Version of the API
+    :optional_params:
+        - :name: alt
+          :example_value: json
+          :description: specifies the format desitred
+```
 
 ##### Running tests from Jenkins/Hudson/CI server
 ##### Mac/linux/unix
