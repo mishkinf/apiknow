@@ -6,10 +6,6 @@ require File.dirname(__FILE__) + '/server'
 
 API_REQUEST_BASE = 'http://gdata.youtube.com/'
 
-# Create any test database needed
-# Initialize test database with test data
-# Spawn api server
-
 require 'open3'
 
 buffer = []

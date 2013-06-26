@@ -15,7 +15,18 @@ spec_tasks.each do |folder|
 end
 
 desc "Run complete application spec suite"
-task 'spec' => spec_tasks.map { |f| "spec:#{f}" }
+task 'spec' do
+  tasks = spec_tasks.map { |f| "spec:#{f}" }
+
+  # Create any test database needed
+  puts "Creating test database (if necessary)"
+  # Initialize test database with test data
+  puts "Initializing test database with test data (if necessary)"
+  # Spawn api server
+  puts "Spawning api server (if necessary)"
+
+  tasks.each { |t| Rake::Task[t].execute }
+end
 
 task :default do
   puts `cat README`
