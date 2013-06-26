@@ -12,7 +12,24 @@ WIP
 
 ##### Running the tests
 ```bash
->> ruby run_tests.rb
+>> rake spec
+Creating test database (if necessary)
+Initializing test database with test data (if necessary)
+Spawning api server (if necessary)
+/Users/mfaustini/.rvm/rubies/ruby-1.9.2-p290/bin/ruby -S rspec -fs --color ./spec/api/test_resources_spec.rb
+
+******************* VIDEOS RESOURCE ROUTES *******************
+  ROUTE: GET /feeds/api/videos/3aICB2mUu2k
+    When navigating to the base route
+GET http://gdata.youtube.com/feeds/api/videos/3aICB2mUu2k?v=2
+      should respond with a 200
+    When navigating to the route with optional parameter query alt=json
+GET http://gdata.youtube.com/feeds/api/videos/3aICB2mUu2k?alt=json&v=2
+      should response with a 200
+
+Finished in 0.75199 seconds
+2 examples, 0 failures
+No examples matching ./spec/responses/**/*_spec.rb could be found
 ```
 ##### Running ApiKnow in interactive console
 ```bash
