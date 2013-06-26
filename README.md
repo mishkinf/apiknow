@@ -20,8 +20,14 @@ WIP
 ```
 
 ##### Generating Documenation
+Documentation is generated in 4 different formats: text, confluence, media wiki, and unstyled semantic html.
+
 ```bash
 >> rake generate_docs
+tmp/documentation.confluence generated.
+tmp/documentation.html generated.
+tmp/documentation.txt generated.
+tmp/documentation.wiki generated.
 ```
 
 ##### Adding tests / end-points
