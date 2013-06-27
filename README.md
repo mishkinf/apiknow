@@ -62,9 +62,7 @@ documentation.txt example
 My API
 ================================================
 _Note: This API documentation is automagically generated_
-
-
-      
+   
 ********************************************************************
 * GET /feeds/api/videos/3aICB2mUu2k
 ********************************************************************
@@ -80,14 +78,12 @@ Required Parameters
 | v          | 2             | Version of the API |
 +------------+---------------+--------------------+
 
-
 Optional Parameters
 +------------+---------------+-------------------------------+
 | Param Name | Example Value |          Description          |
 +------------+---------------+-------------------------------+
 | alt        | json          | specifies the format desitred |
 +------------+---------------+-------------------------------+
-
 
 Example Requests
 ----------------
