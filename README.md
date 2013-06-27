@@ -1,5 +1,5 @@
 # ApiKnow
-### Quickly test an API and generate API documentation.
+*Quickly test an API and generate API documentation.*
 
 ##### Writing tests
 Add a YAML file in routes folder(see existing). Add a response JSON or whatever file in spec/responses.
