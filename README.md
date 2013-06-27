@@ -1,14 +1,24 @@
 # ApiKnow
 #### ApiKnow provides you with the ability to quickly test an API and generate API documentation.
 
-##### GUIDELINES for testing
+##### Writing tests
+Add a YAML file in routes folder(see existing). Add a response JSON or whatever file in spec/responses.
 
-##### Unversioned APIs
-After making any modifications, always add a test and never remove test coverage.
-This approach will ensure backwards compatibility.
-
-##### Versioned APIs
-WIP
+```yaml
+# Example YAML based DSL for specifying routes, parameters, descriptions and test files
+videos:
+  - :path: /feeds/api/videos/3aICB2mUu2k
+    :description: This route is used to get information about a youtube video details
+    :method: :get
+    :required_params:
+        - :name: v
+          :example_value: 2
+          :description: Version of the API
+    :optional_params:
+        - :name: alt
+          :example_value: json
+          :description: specifies the format desitred
+```
 
 ##### Running the tests
 ```bash
@@ -46,34 +56,6 @@ tmp/documentation.html generated.
 tmp/documentation.txt generated.
 tmp/documentation.wiki generated.
 ```
-
-##### Adding tests / end-points
-Add a YAML file in routes folder(see existing). Add a response JSON or whatever file in spec/responses.
-
-```yaml
-# Example YAML based DSL for specifying routes, parameters, descriptions and test files
-videos:
-  - :path: /feeds/api/videos/3aICB2mUu2k
-    :description: This route is used to get information about a youtube video details
-    :method: :get
-    :required_params:
-        - :name: v
-          :example_value: 2
-          :description: Version of the API
-    :optional_params:
-        - :name: alt
-          :example_value: json
-          :description: specifies the format desitred
-```
-
-##### Running tests from Jenkins/Hudson/CI server
-##### Mac/linux/unix
-  The tests are easily runnable via any continuous integration server by simply running the 'ci.sh'
-  file from your CI server for bash environments.
-
-##### Windows
-  (Coming soon)
-
 Run honorable tests for great justice.
 
 #### License
