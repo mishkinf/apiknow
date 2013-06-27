@@ -56,6 +56,48 @@ tmp/documentation.html generated.
 tmp/documentation.txt generated.
 tmp/documentation.wiki generated.
 ```
+documentation.txt example
+```text
+------------------------------------------------
+My API
+================================================
+_Note: This API documentation is automagically generated_
+
+
+      
+********************************************************************
+* GET /feeds/api/videos/3aICB2mUu2k
+********************************************************************
+
+* Description
+-----------
+This route is used to get information about a youtube video details
+
+Required Parameters
++------------+---------------+--------------------+
+| Param Name | Example Value |    Description     |
++------------+---------------+--------------------+
+| v          | 2             | Version of the API |
++------------+---------------+--------------------+
+
+
+Optional Parameters
++------------+---------------+-------------------------------+
+| Param Name | Example Value |          Description          |
++------------+---------------+-------------------------------+
+| alt        | json          | specifies the format desitred |
++------------+---------------+-------------------------------+
+
+
+Example Requests
+----------------
+/feeds/api/videos/3aICB2mUu2k?v=2 - http://gdata.youtube.com//feeds/api/videos/3aICB2mUu2k?v=2
+
+Example Output
+--------------
+No example output
+```
+
 Run honorable tests for great justice.
 
 #### License
